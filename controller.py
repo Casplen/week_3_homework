@@ -15,4 +15,11 @@ def game(choice1, choice2):
     rock_paper_scissors.play()
     return render_template('game.html', game = rock_paper_scissors)
 
+@app.route('/setnames', methods = ['POST'])
+def setnames():
+    player1.name = request.form['player_1_name']
+    player2.name = request.form['player_2_name']
+    return render_template('index.html')
+    
+
 
