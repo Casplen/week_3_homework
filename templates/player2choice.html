@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <form action="/player2choice" method="POST">
+        <input type="radio" id="rock" name="player_2_choice" value="rock"></input>
+        <label for="rock">Rock</label>
+        <br>
+        <input type="radio" id="paper" name="player_2_choice" value="paper"></input>
+        <label for="paper">Paper</label>
+        <br>
+        <input type="radio" id="scissors" name="player_2_choice" value="scissors"></input>
+        <label for="scissors">Scissors</label>
+        <br>
+        <input type="submit" class="submit">
+    </form>
+    
+{% endblock %}
