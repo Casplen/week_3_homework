@@ -1,3 +1,4 @@
+from flask import render_template, request
 from app import app
 from app.models.game import Game 
 from app.models.player import Player
@@ -5,14 +6,13 @@ from app.models.rockpaperscissors import *
 
 @app.route('/')
 def index():
-    return "Hello, World!"
+    return render_template('index.html')
 
 @app.route('/<choice1>/<choice2>')
 def game(choice1, choice2):
     player1.choice = choice1
     player2.choice = choice2
     rock_paper_scissors.play()
-    return rock_paper_scissors.get_winner()
-
+    return render_template('game.html', game = rock_paper_scissors)
 
 
