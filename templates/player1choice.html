@@ -1,17 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
-
-    <form action="/player1choice" method="POST">
-        <input type="radio" id="rock" name="player_1_choice" value="rock"></input>
-        <label for="rock">Rock</label>
-        <br>
-        <input type="radio" id="paper" name="player_1_choice" value="paper"></input>
-        <label for="paper">Paper</label>
-        <br>
-        <input type="radio" id="scissors" name="player_1_choice" value="scissors"></input>
-        <label for="scissors">Scissors</label>
-        <br>
-        <input type="submit" class="submit">
-    </form>
-    
+    <main>
+        <form action="/player1choice" method="POST" class="player-choice">
+            <div>
+            <input type="radio" id="rock" name="player_1_choice" value="rock"></input>
+            <label for="rock">Rock</label>
+            <br><br>
+            <input type="radio" id="paper" name="player_1_choice" value="paper"></input>
+            <label for="paper">Paper</label>
+            <br><br>
+            <input type="radio" id="scissors" name="player_1_choice" value="scissors"></input>
+            <label for="scissors">Scissors</label>
+            <br><br>
+            <input type="submit" class="submit">
+        </form>
+    </main>
 {% endblock %}

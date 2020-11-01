@@ -1,0 +1,21 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #59ced9;
+    margin: 0px;
+}
+
+body > header {
+    background-color: #292d2e;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+
+body > main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+body > main > form {
+    padding: 16px 0px;
+}
